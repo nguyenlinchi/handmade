@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:gravity="center">
+
+        <!-- Địa chỉ giao hàng -->
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ giao hàng"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="text" />
+
+        <!-- Số điện thoại -->
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="phone" />
+
+        <!-- Chọn phương thức thanh toán -->
+        <Spinner
+            android:id="@+id/spinnerPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Ghi chú -->
+        <EditText
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ghi chú (tuỳ chọn)"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="text" />
+
+        <!-- Tổng tiền -->
+        <TextView
+            android:id="@+id/txtTotalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: 0.00"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <!-- Nút Đặt hàng -->
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đặt hàng"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>

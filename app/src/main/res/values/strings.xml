@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">handmade</string>
+    <string name="intro_text">Góp nhặt yêu thương\nThêu dệt đam mê</string>
+    <string name="intro_subtitle">Giờ đây, việc tiếp cận những sản phẩm chất lượng nhất trên internet trở nên thật dễ dàng!</string>
+    <string name="intro_signin">Already have an account?<font color="#854811"> Sign in</font></string>
+    <style name="CircularImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- Đảm bảo ảnh tròn -->
+    </style>
+    <string-array name="payment_methods">
+        <item>COD</item>
+        <item>CreditCard</item>
+        <item>E-Wallet</item>
+    </string-array>
+
+</resources>
